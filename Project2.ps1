@@ -22,4 +22,5 @@ function Generate-RandomPassword {
 $randomPassword = Generate-RandomPassword -length 16
 
 # Display the password
+# todo stop printing password and forward it to keychain
 Write-Host "Your random password is: $randomPassword"

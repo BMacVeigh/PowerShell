@@ -11,6 +11,12 @@ $question = "question"
 $answer = "answer"
 
 write-host $question
-sleep 5
-<#find a way to set up sleep until a key is pressed#>
+$userinput = read-host($question )
+if $userinput -eq $answer{
+	write-host "that's right! $userinput"
+}
+else{
+	write-host "nope"
+	write-host "the correct answer was $answer"
+}
 write-host $answer

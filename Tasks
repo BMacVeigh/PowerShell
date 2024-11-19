@@ -11,3 +11,6 @@ if (Test-Path $tasksFilePath) {
 } else {
     Write-Host "You don't have any tasks listed for today."
 }
+
+
+#I plan on using this script when finished to point out specific tasks that are either coming up or due?

@@ -23,4 +23,14 @@ $randomPassword = Generate-RandomPassword -length 16
 
 # Display the password
 # todo stop printing password and forward it to keychain
-Write-Host "Your random password is: $randomPassword"
+write-host "How would you like to recieve your password?"
+write-host "1) print your password?"
+write-host "2) save password to your clipboard"
+$option = read-host("option: ")
+if ($option -eq "1"){
+	Write-Host "Your random password is: $randomPassword"
+}
+else{
+	Set-Clipboard -Value $randomPassword
+	write-host "your random password has been saved to your clipboard"
+}

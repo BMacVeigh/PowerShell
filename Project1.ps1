@@ -1,11 +1,9 @@
 ﻿Write-host "Hello World"
 
+# I will need an API for this which I have had zero luck with so far.
 $joke = "command which callsAPI"
 
-<#this is to help you learn to parse out the json you receive from the API#>
 write-host $joke
-
-<#here you should parse the json into question and answer#>
 
 $question = "question"
 $answer = "answer"
